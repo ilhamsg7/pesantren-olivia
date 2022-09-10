@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <title>Blog Page | Pesantren</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+    <nav class="bg-gray-100 border-gray-200 dark:bg-gray-900">
+        <div class="flex hidden sm:flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
+            <a href="https://flowbite.com" class="flex items-center gap-2">
+                <small id="icon" class="fa fa-map-marker-alt me-2 text-green-500"></small>
+                <small class="mr-6 text-sm font-medium text-green-500 dark:text-white hover:underline">123 Street, New York, USA</small>
+            </a>
+            <div class="flex items-center gap-2">
+                <small id="icon2" class="far fa-clock me-2 text-green-500"></small>
+                <small class="mr-6 text-sm font-medium text-green-500 dark:text-white hover:underline">Mon - Fri : 09.00 AM - 09.00 PM</small>
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-white shadow-lg mb-5">
+        <div class="max-w-6xl mx-auto px-2">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-bold text-green-500 text-2xl">PesantrenQ</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                    <a href="blog.html" class="py-4 px-2 border-b-4 border-green-500 text-green-500 font-semibold">Blog</a>
+                    <a href="gallery.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Galeri</a>
+                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact
+                        Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="index.html"
+                        class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+                <li class="active"><a href="blog.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Blog</a></li>
+                <li><a href="gallery.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Gallery</a>
+                </li>
+                <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+    
+    <!-- Image -->
+    <div class="container mx-auto">
+        <div class="grid-cols-3 p-15 space-y-2 lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-2">
+            <div class="w-full col-span-2 row-span-2 rounded">
+                <iframe height="100%" width="100%" src="https://www.youtube.com/embed/W1L1sU0uI0o"
+                    alt="image"></iframe>
+            </div>
+            <div class="w-full rounded">
+                <img src="https://source.unsplash.com/700x331?f35-jet"
+                    alt="image">
+            </div>
+            <div class="w-full rounded">
+                <img src="https://source.unsplash.com/700x331?sukhoi-su30"
+                    alt="image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Text Header -->
+    <header class="w-full container mx-auto bg-green-400 mt-5 mb-5">
+        <div class="flex flex-col items-center py-12 gap-1">
+            <a class="font-bold text-white uppercase hover:text-gray-700 text-5xl" href="#">
+                Minimal Blog
+            </a>
+            <p class="text-lg text-white">
+                Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+    </header>
+
+    <!-- Topic Nav -->
+    <!-- <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
+        <div class="block sm:hidden">
+            <a
+                href="#"
+                class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
+                @click="open = !open"
+            >
+                Topics <i :class="open ? 'fa-chevron-down': 'fa-chevron-up'" class="fas ml-2"></i>
+            </a>
+        </div>
+        <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Technology</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Automotive</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Finance</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Politics</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Culture</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Sports</a>
+            </div>
+        </div>
+    </nav> -->
+
+    <div class="container mx-auto flex flex-wrap py-6">
+    
+        <!-- Posts Section -->
+        <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+    
+            <article class="flex flex-col shadow my-4">
+                <!-- Article Image -->
+                <a href="#" class="hover:opacity-75">
+                    <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=1">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Technology</a>
+                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Lorem Ipsum Dolor Sit Amet Dolor Sit
+                        Amet</a>
+                    <p href="#" class="text-sm pb-3">
+                        By <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>, Published on April 25th,
+                        2020
+                    </p>
+                    <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta
+                        dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet
+                        posuere magna..</a>
+                    <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+    
+            <article class="flex flex-col shadow my-4">
+                <!-- Article Image -->
+                <a href="#" class="hover:opacity-75">
+                    <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=2">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Automotive, Finance</a>
+                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Lorem Ipsum Dolor Sit Amet Dolor Sit
+                        Amet</a>
+                    <p href="#" class="text-sm pb-3">
+                        By <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>, Published on January 12th,
+                        2020
+                    </p>
+                    <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta
+                        dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet
+                        posuere magna..</a>
+                    <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+    
+            <article class="flex flex-col shadow my-4">
+                <!-- Article Image -->
+                <a href="#" class="hover:opacity-75">
+                    <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=3">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Sports</a>
+                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Lorem Ipsum Dolor Sit Amet Dolor Sit
+                        Amet</a>
+                    <p href="#" class="text-sm pb-3">
+                        By <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>, Published on October 22nd,
+                        2019
+                    </p>
+                    <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta
+                        dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet
+                        posuere magna..</a>
+                    <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+    
+            <!-- Pagination -->
+            <div class="flex items-start py-8">
+                <a href="#"class="h-10 w-10 font-semibold text-gray-800 hover:text-gray-900 text-sm flex items-center justify-center mr-12">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Previous</a>
+                <a href="#"
+                    class="h-10 w-10 bg-blue-800 hover:bg-blue-600 font-semibold text-white text-sm flex items-center justify-center">1</a>
+                <a href="#"
+                    class="h-10 w-10 font-semibold text-gray-800 hover:bg-blue-600 hover:text-white text-sm flex items-center justify-center">2</a>
+                <a href="#"
+                    class="h-10 w-10 font-semibold text-gray-800 hover:bg-blue-600 hover:text-white text-sm flex items-center justify-center">3</a>
+                <a href="#"
+                    class="h-10 w-10 font-semibold text-gray-800 hover:text-gray-900 text-sm flex items-center justify-center ml-6">Next
+                    <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+    
+        </section>
+    
+        <!-- Sidebar Section -->
+        <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <form>
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Blog</label>
+                    <div class="relative">
+                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Cari Blog" required>
+                        <button type="submit"
+                            class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=1">
+                <p class="text-xl font-semibold mt-3">Title</p>
+                <p class="pb-2 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis est eu odio
+                    sagittis tristique. Vestibulum ut finibus leo. In hac habitasse platea dictumst.</p>
+            </div>
+    
+            <!-- <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">About Us</p>
+                <p class="pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis est eu odio
+                    sagittis tristique. Vestibulum ut finibus leo. In hac habitasse platea dictumst.</p>
+                <a href="#"
+                    class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4">
+                    Get to know us
+                </a>
+            </div> -->
+
+            <div class="w-full shadow flex flex-col my-4 p-6 text-sm font-medium text-gray-900 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <p class="text-xl font-semibold pb-5">Category</p>
+                <a href="#" aria-current="true"
+                    class="block flex justify-between py-2 px-4 w-full border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                    <p>Kajian</p>
+                    <p>(50)</p>
+                </a>
+                <a href="#"
+                    class="block flex justify-between py-2 px-4 w-full border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                    <p>Diskusi</p>
+                    <p>(25)</p>
+                </a>
+                <a href="#"
+                    class="block flex justify-between py-2 px-4 w-full border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                    <p>Narasi</p>
+                    <p>(15)</p>
+                </a>
+                <a href="#"
+                    class="block flex justify-between py-2 px-4 w-full rounded-b-lg cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                    <p>Kolom</p>
+                    <p>(23)</p>
+                </a>
+            </div>
+
+
+            <div
+                class="w-full shadow flex flex-col my-4 p-6 text-sm font-medium text-gray-900 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <p class="text-xl font-semibold pb-5">Postingan Terbaru</p>
+                <div class="flex-row space-y-3.5">
+                    <div class="flex justify-center">
+                        <div class="flex h-28 flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+                            <img class="h-full w-full object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                                src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
+                            <div class="p-2 flex flex-col justify-start">
+                                <h5 class="text-gray-900 text-md font-medium mb-2">Card title</h5>
+                                <p class="text-gray-700 text-sm font-light mb-2">
+                                    This is a wider card with supporting text below
+                                </p>
+                                <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="flex h-28 flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+                            <img class="h-full w-full object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                                src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
+                            <div class="p-2 flex flex-col justify-start">
+                                <h5 class="text-gray-900 text-md font-medium mb-2">Card title</h5>
+                                <p class="text-gray-700 text-sm font-light mb-2">
+                                    This is a wider card with supporting text below
+                                </p>
+                                <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="flex h-28 flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+                            <img class="h-full w-full object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                                src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
+                            <div class="p-2 flex flex-col justify-start">
+                                <h5 class="text-gray-900 text-md font-medium mb-2">Card title</h5>
+                                <p class="text-gray-700 text-sm font-light mb-2">
+                                    This is a wider card with supporting text below
+                                </p>
+                                <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="flex h-28 flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+                            <img class="h-full w-full object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                                src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
+                            <div class="p-2 flex flex-col justify-start">
+                                <h5 class="text-gray-900 text-md font-medium mb-2">Card title</h5>
+                                <p class="text-gray-700 text-sm font-light mb-2">
+                                    This is a wider card with supporting text below
+                                </p>
+                                <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">Tag</p>
+                <div class="grid grid-cols-3 gap-3">
+                    <p class="bg-white shadow p-2">Satu</p>
+                    <p class="bg-white shadow p-2">Dua</p>
+                    <p class="bg-white shadow p-2">Tiga</p>
+                    <p class="bg-white shadow p-2">Empat</p>
+                    <p class="bg-white shadow p-2">Lima</p>
+                    <p class="bg-white shadow p-2">Enam</p>
+                    <p class="bg-white shadow p-2">Tujuh</p>
+                </div>
+            </div>
+    
+        </aside>
+    
+    </div>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/"
+                class="hover:underline">Flowbite™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+    </footer>
+
+<script>
+    function getCarouselData() {
+        return {
+            currentIndex: 0,
+            images: [
+                'https://source.unsplash.com/collection/1346951/800x800?sig=1',
+                'https://source.unsplash.com/collection/1346951/800x800?sig=2',
+                'https://source.unsplash.com/collection/1346951/800x800?sig=3',
+                'https://source.unsplash.com/collection/1346951/800x800?sig=4',
+                'https://source.unsplash.com/collection/1346951/800x800?sig=5',
+                'https://source.unsplash.com/collection/1346951/800x800?sig=6',
+                'https://source.unsplash.com/collection/1346951/800x800?sig=7',
+                'https://source.unsplash.com/collection/1346951/800x800?sig=8',
+                'https://source.unsplash.com/collection/1346951/800x800?sig=9',
+            ],
+            increment() {
+                this.currentIndex = this.currentIndex === this.images.length - 6 ? 0 : this.currentIndex + 1;
+            },
+            decrement() {
+                this.currentIndex = this.currentIndex === this.images.length - 6 ? 0 : this.currentIndex - 1;
+            },
+        }
+    }
+</script>
+
+    <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+</body>
+</html>
