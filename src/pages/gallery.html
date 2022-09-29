@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <title>Gallery Page | Pesantren</title>
+    <!-- <link href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-100 border-gray-200 dark:bg-gray-900">
+        <div class="flex hidden sm:flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
+            <a href="https://flowbite.com" class="flex items-center gap-2">
+                <small id="icon" class="fa fa-map-marker-alt me-2 text-green-500"></small>
+                <small class="mr-6 text-sm font-medium text-green-500 dark:text-white hover:underline">123 Street, New York, USA</small>
+            </a>
+            <div class="flex items-center gap-2">
+                <small id="icon2" class="far fa-clock me-2 text-green-500"></small>
+                <small class="mr-6 text-sm font-medium text-green-500 dark:text-white hover:underline">Mon - Fri : 09.00 AM - 09.00 PM</small>
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-white shadow-lg mb-5">
+        <div class="max-w-6xl mx-auto px-2">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-bold text-green-500 text-2xl">PesantrenQ</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                    <a href="blog.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Blog</a>
+                    <a href="gallery.html" class="py-4 px-2 border-b-4 border-green-500 text-green-500 font-semibold">Galeri</a>
+                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact
+                        Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="index.html"
+                        class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+                <li class="active"><a href="blog.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Blog</a></li>
+                <li><a href="gallery.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Gallery</a>
+                </li>
+                <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+
+    <header class="w-full container mx-auto bg-green-400 mt-5 mb-5">
+        <div class="flex flex-col items-center py-12 gap-1">
+            <p class="text-lg text-white">
+                Galeri Foto
+            </p>
+            <a class="font-bold text-white uppercase text-5xl border-b-white" href="#">
+                Galeri Foto Kegiatan
+            </a>
+        </div>
+    </header>
+
+    <div class="flex items-center justify-center">
+        <div class="inline-flex gap-3" role="toolbar">
+            <button type="button"
+                class="inline-block px-6 py-2.5 bg-green-400 text-white font-medium text-xs leading-tight uppercase hover:bg-green-700 focus:bg-green-700 focus:outline-none focus:ring-0 active:bg-green-800 transition duration-150 ease-in-outt">Lomba</button>
+            <button type="button"
+                class=" inline-block px-6 py-2.5 bg-green-400 text-white font-medium text-xs leading-tight uppercase hover:bg-green-700 focus:bg-green-700 focus:outline-none focus:ring-0 active:bg-green-800 transition duration-150 ease-in-out">Peringatan</button>
+            <button type="button"
+                class=" inline-block px-6 py-2.5 bg-green-400 text-white font-medium text-xs leading-tight uppercase hover:bg-green-700 focus:bg-green-700 focus:outline-none focus:ring-0 active:bg-green-800 transition duration-150 ease-in-out">Kajian</button>
+            <button type="button"
+                class=" inline-block px-6 py-2.5 bg-green-400 text-white font-medium text-xs leading-tight uppercase hover:bg-green-700 focus:bg-green-700 focus:outline-none focus:ring-0 active:bg-green-800 transition duration-150 ease-in-out">Diskusi</button>
+            <button type="button"
+                class="inline-block px-6 py-2.5 bg-green-400 text-white font-medium text-xs leading-tight uppercase hover:bg-green-700 focus:bg-green-700 focus:outline-none focus:ring-0 active:bg-green-800 transition duration-150 ease-in-out">Qurban</button>
+        </div>
+    </div>
+
+<section class="overflow-hidden text-gray-700">
+    <div class="container px-5 mx-auto lg:pt-6 lg:px-32">
+        <div class="flex flex-wrap -m-1 md:-m-2">
+            <div class="flex flex-wrap w-1/2">
+                <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp">
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp">
+                </div>
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+                </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp">
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp">
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp">
+                </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+                <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp">
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp">
+                </div>
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+                </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp">
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp">
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/"
+                class="hover:underline">Flowbite™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        function getCarouselData() {
+            return {
+                currentIndex: 0,
+                images: [
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=1',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=2',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=3',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=4',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=5',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=6',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=7',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=8',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=9',
+                ],
+                increment() {
+                    this.currentIndex = this.currentIndex === this.images.length - 6 ? 0 : this.currentIndex + 1;
+                },
+                decrement() {
+                    this.currentIndex = this.currentIndex === this.images.length - 6 ? 0 : this.currentIndex - 1;
+                },
+            }
+        }
+    </script>
+
+    <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+</body>
+
+</html>
