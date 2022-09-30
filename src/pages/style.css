@@ -169,7 +169,7 @@ img {
 .mu-main-navbar {
   background-color: #fff;
   border: none;
-  padding: 25px 0;
+  padding: 5px 0;
   border-radius: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -439,6 +439,58 @@ img {
   padding-top: 30px;
   width: 100%;
 }
+
+
+#mu-visiMisi-us {
+  background-color: #222;
+  color: #fff;
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 100px 0;
+}
+#mu-visiMisi-us .mu-visiMisi-us-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-visiMisi-us .mu-visiMisi-us-area .mu-title h2{
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+#mu-visiMisi-us .mu-visiMisi-us-area .mu-visiMisi-us-left {
+  display: inline;
+  float: left;
+  margin-top: 20px;
+  padding-top: 30px;
+  width: 100%;
+}
+#mu-visiMisi-us .mu-visiMisi-us-area .mu-visiMisi-us-left p {
+  line-height: 24px;
+}
+#mu-visiMisi-us .mu-visiMisi-us-area .mu-visiMisi-us-left ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+#mu-visiMisi-us .mu-visiMisi-us-area .mu-visiMisi-us-left ul li {
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+#mu-visiMisi-us .mu-visiMisi-us-area .mu-visiMisi-us-left ul li:before {
+  content: "\f24d";
+  font-family: fontAwesome;
+  margin-right: 10px;
+}
+#mu-visiMisi-us .mu-visiMisi-us-area .mu-visiMisi-us-right {
+  display: inline;
+  float: left;
+  margin-top: 20px;
+  padding-top: 30px;
+  width: 100%;
+}
 .mu-title {
   display: inline;
   float: left;
@@ -451,6 +503,7 @@ img {
   font-family: "Tangerine", cursive;
   line-height: 30px;
 }
+
 .mu-title h2 {
   color: #000;
   font-size: 35px;
@@ -674,6 +727,46 @@ BAGIAN KEGIATAN
   width: 100%;
 }
 
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content {
+  display: inline;
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+#mu-aktivitas .mu-aktivitas-area .mu-artikel-content .mu-artikel {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li {
+  display: inline-block;
+  float: none;
+}
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  border-radius: 0;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 15px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas .active a,
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas .active a:hover,
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas .active a:focus {
+  background-color: #FFF;
+}
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-tab-content-area {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 50px 0;
+}
+
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-us-left ul {
   margin-bottom: 20px;
   padding-left: 20px;
@@ -804,34 +897,25 @@ BAGIAN KEGIATAN
 }
 
 /*==================
-RESERVATION SECTION
+BAGIAN ACARA
 ====================*/
+
+/*==================
+BAGIAN KEGIATAN
+==================*/
 #mu-kegiatan {
-  background-color: #222;
+  background-color: #fff;
   display: inline;
   float: left;
-  padding: 100px 0;
   width: 100%;
+  padding: 100px 0;
 }
 #mu-kegiatan .mu-kegiatan-area {
   display: inline;
   float: left;
   width: 100%;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-title h2 {
-  color: #fff;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-us-left {
-  color: #fff;
-  display: inline;
-  float: left;
-  margin-top: 20px;
-  padding-top: 30px;
-  width: 100%;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-us-left p {
-  line-height: 24px;
-}
+
 #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-us-left ul {
   margin-bottom: 20px;
   padding-left: 20px;
@@ -846,6 +930,16 @@ RESERVATION SECTION
   font-family: fontAwesome;
   margin-right: 10px;
 }
+
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-us-left {
+  color: #222;
+  display: inline;
+  float: left;
+  margin-top: 20px;
+  padding-top: 30px;
+  width: 100%;
+}
+
 #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-us-right {
   display: inline;
   float: left;
@@ -854,94 +948,102 @@ RESERVATION SECTION
   width: 100%;
 }
 
-/* #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content {
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content {
   display: inline;
   float: left;
-  margin-top: 20px;
-  padding: 0 100px;
+  margin-top: 30px;
   width: 100%;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content h3 {
-  color: #fff;
+#mu-kegiatan .mu-kegiatan-area .mu-title h2 {
+  color: #222
+}
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan {
   display: inline-block;
-  padding-bottom: 10px;
-  font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content p {
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan li {
+  display: inline-block;
+  float: none;
+}
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  border-radius: 0;
   color: #fff;
-  letter-spacing: 0.5px;
-  padding: 0 50px;
-  text-align: center;
+  font-size: 18px;
+  margin: 0 15px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form {
-  margin-top: 30px;
-  text-align: center;
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan .active a,
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan .active a:hover,
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan .active a:focus {
+  /* background-color: #FFF; */
+  background-color: #fff;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form .form-control {
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 50px 0;
+}
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-tab-content-left {
+  display: inline;
+  float: left;
+  padding-right: 15px;
+  width: 100%;
+}
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-tab-content-right {
+  display: inline;
+  float: left;
+  padding-left: 15px;
+  width: 100%;
+}
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-menu-item-nav li {
+  border-bottom: 1px dashed #ccc;
+  display: inline;
+  float: left;
   margin-bottom: 20px;
+  padding-bottom: 15px;
+  width: 100%;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="text"],
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="email"] {
-  border-radius: 0;
-  color: #000;
-  height: 40px;
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-menu-item-nav li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="text"]:focus,
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="email"]:focus {
-  box-shadow: none;
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left {
+  width: 110px;
+  height: 110px;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="text"]::-webkit-input-placeholder,
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="email"]::-webkit-input-placeholder {
-  color: #555;
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
+  width: 110px;
+  height: 110px;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="text"]:-moz-placeholder,
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="email"]:-moz-placeholder {
-  color: #555;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="text"]::-moz-placeholder,
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="email"]::-moz-placeholder {
-  color: #555;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="text"]:-ms-input-placeholder,
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="email"]:-ms-input-placeholder {
-  color: #555;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form select {
-  border-radius: 0;
-  height: 40px;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form select:focus {
-  box-shadow: none;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form select option {
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading {
+  font-size: 20px;
   margin-bottom: 10px;
-  color: #000;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form textarea {
-  border-radius: 0;
-  color: #000;
-  padding: 10px;
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading a {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form textarea:focus {
-  box-shadow: none;
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .mu-menu-price {
+  font-size: 15px;
+  /* font-weight: bold; */
+  letter-spacing: 1.5px;
+  line-height: 20px;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form textarea::-webkit-input-placeholder {
-  color: #555;
+#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body p {
+  margin-top: 10px;
+  font-size: 14px;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form textarea:-moz-placeholder {
-  color: #555;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form textarea::-moz-placeholder {
-  color: #555;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form textarea:-ms-input-placeholder {
-  color: #555;
-}
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form button[type="submit"] {
-  border: none;
-  margin-top: 20px;
-  margin-left: 15px;
-} */
 
 .datepicker {
   border-radius: 0;
@@ -1074,6 +1176,25 @@ RESERVATION SECTION
   overflow: hidden;
   width: 100%;
 }
+#mu-galeri .mu-galeri-area .mu-galeri-content .mu-galeri-body .mu-single-gallery .mu-single-gallery-item .judulEvent p{
+  padding-top: 6px;
+  margin-left: 10px;
+}
+#mu-galeri .mu-galeri-area .mu-galeri-content .mu-galeri-body .mu-single-gallery .mu-single-gallery-item .judulEvent{ 
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+}
+#mu-galeri .mu-galeri-area .mu-galeri-content .mu-galeri-body .mu-single-gallery .mu-single-gallery-item .judulEvent .row{
+  margin-left: 0px;
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+}
+
+#mu-galeri .mu-galeri-area .mu-galeri-content .mu-galeri-body .mu-single-gallery .mu-single-gallery-item .judulEvent .row p{
+  padding-top: 6px;
+  margin-left: 0px;
+}
+
 #mu-galeri .mu-galeri-area .mu-galeri-content .mu-galeri-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img img {
   width: 100%;
   height: 100%;
@@ -2351,6 +2472,11 @@ RESERVATION SECTION
     margin: 0 5px;
   }
 
+  #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li a {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+
   #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content p {
     padding: 0;
   }
@@ -2409,6 +2535,11 @@ RESERVATION SECTION
   }
 
   #mu-artikel .mu-artikel-area .mu-artikel-content .mu-artikel li a {
+    font-size: 14px;
+    margin: 0 2px;
+  }
+
+  #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li a {
     font-size: 14px;
     margin: 0 2px;
   }
@@ -2488,6 +2619,9 @@ RESERVATION SECTION
   #mu-artikel .mu-artikel-area .mu-artikel-content .mu-artikel li {
     margin-bottom: 10px;
   }
+  #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li {
+    margin-bottom: 10px;
+  }
   .mu-blog-related-post .mu-blog-related-post-area {   
     margin-top: 30px;   
   }
@@ -2497,11 +2631,23 @@ RESERVATION SECTION
     margin-bottom: 12px;
   }
 
+  #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li {
+    margin-bottom: 12px;
+  }
+
+  #mu-visiMisi-us {
+    padding: 100px 0 50px;
+  }
+
   #mu-sejarah-us {
     padding: 100px 0 50px;
   }
 
   #mu-artikel {
+    padding-bottom: 0px;
+  }
+
+  #mu-aktivitas {
     padding-bottom: 0px;
   }
 
@@ -2606,7 +2752,19 @@ RESERVATION SECTION
     float: left;
   }
 
+  #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    float: left;
+  }
+
   #mu-artikel .mu-artikel-area .mu-artikel-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
     height: 100%;
     width: 100%;
   }

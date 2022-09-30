@@ -56,6 +56,10 @@ Author URI : http://www.markups.io/
   color: #3fc35f;
 }
 
+#mu-visiMisi-us .mu-visiMisi-us-area .mu-visiMisi-us-left ul li:before {
+  color: #3fc35f;
+}
+
 .mu-title .mu-subtitle {
   color: #3fc35f;
 }
