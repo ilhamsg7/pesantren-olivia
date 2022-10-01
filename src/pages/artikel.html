@@ -11,8 +11,10 @@
 
     <!-- Font awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
+	
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">   
+
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">    
     <!-- Date Picker -->
@@ -24,6 +26,7 @@
 
     <!-- Main style sheet -->
     <link href="style.css" rel="stylesheet">    
+	<link rel="stylesheet" href="assets/css/custom.css">
 
    
     <!-- Google Fonts -->
@@ -69,7 +72,9 @@
           </button>
           <!-- LOGO -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
-          <a class="navbar-brand" href="index.html" style="color:black">SIPONTREN</a>
+          <a class="navbar-brand" id="ponpes-title" href="index.html"style="color:black">
+			SIPONTREN
+		</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
@@ -90,12 +95,12 @@
   <!-- Start Blog banner  -->
   <section id="mu-blog-banner">
     <div class="container">
-      <div class="mu-blog-banner-area">
+      <div class="mu-blog-banner-area" >
+		<ol class="breadcrumb">
+			<li><a href="index.html">Beranda</a></li>
+			<li class="yellow-primary">Artikel</li>
+		</ol>
         <h2>Artikel</h2>
-        <ol class="breadcrumb">
-          <li><a href="index.html">Beranda</a></li>          
-          <li class="active">Artikel</li>
-        </ol>
       </div>
     </div>
   </section>
@@ -114,7 +119,7 @@
                   <article class="mu-news-single">
                     <h3><a href="detail-artikel.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
                     <figure class="mu-news-img">
-                      <a href="detail-artikel.html"><img src="assets/img/news/1.jpg" alt="img"></a>                      
+                      <a href="detail-artikel.html"><img src="https://source.unsplash.com/1280x720?moeslim" alt="img"></a>                      
                     </figure>
                     <div class="mu-news-single-content">                      
                       <ul class="mu-meta-nav">
@@ -132,7 +137,7 @@
                   <article class="mu-news-single">
                     <h3><a href="detail-artikel.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
                     <figure class="mu-news-img">
-                      <a href="detail-artikel.html"><img src="assets/img/news/2.jpg" alt="img"></a>                      
+                      <a href="detail-artikel.html"><img src="https://source.unsplash.com/1280x720?islam" alt="img"></a>                      
                     </figure>
                     <div class="mu-news-single-content">                      
                       <ul class="mu-meta-nav">
@@ -150,7 +155,7 @@
                   <article class="mu-news-single">
                     <h3><a href="detail-artikel.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
                     <figure class="mu-news-img">
-                      <a href="detail-artikel.html"><img src="assets/img/news/3.jpg" alt="img"></a>                      
+                      <a href="detail-artikel.html"><img src="https://source.unsplash.com/1280x720?islamic" alt="img"></a>                      
                     </figure>
                     <div class="mu-news-single-content">                      
                       <ul class="mu-meta-nav">
@@ -194,6 +199,16 @@
               <!-- Start Blog Sidebar -->
               <div class="col-md-4 col-sm-4">             
                 <aside class="mu-blog-sidebar">
+                  <!-- Search Bar -->
+                  <div class="mu-blog-sidebar-single col-md-12">
+                    <div class="input-group" id="search-bar">
+                      	<input type="text" class="form-control" placeholder="Search this blog" style="width: 85%;">
+                        <button class="btn btn-green-primary" type="button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                  </div>
+
                   <!-- Blog Sidebar Single -->
                   <div class="mu-blog-sidebar-single">
                     <h3>Kategori</h3>
@@ -232,9 +247,42 @@
                   <!-- End Blog Sidebar Single -->
                   <!-- Blog Sidebar Single -->
                   <div class="mu-blog-sidebar-single">                    
-                    <a href="#" class="mu-sidebar-add">
-                      <img src="assets/img/banner-ads.jpg" alt="img">
-                    </a>
+					<div class="media">
+						<div class="media-left">
+							<a href="blog-single.html">
+								<img class="media-object" src="https://source.unsplash.com/110x110?islamic" alt="img">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="blog-single.html">Artikel pertama</a></h4>
+							<span class="mu-menu-price">By Admin | 15 September 2022 </span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="blog-single.html">
+								<img class="media-object" src="https://source.unsplash.com/110x110?islam" alt="img">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="blog-single.html">Artikel kedua</a></h4>
+							<span class="mu-menu-price">By Admin | 15 September 2022 </span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="blog-single.html">
+								<img class="media-object" src="https://source.unsplash.com/110x110?mosque" alt="img">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="blog-single.html">Artikel ketiga</a></h4>
+							<span class="mu-menu-price">By Admin | 15 September 2022 </span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+					</div>
                   </div>
                   <!-- End Blog Sidebar Single -->
                 </aside>

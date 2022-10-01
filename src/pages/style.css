@@ -21,13 +21,56 @@
 #RESPONSIVE DESIGN
 */
 /* BASE - Base tyles, Variables, Mixins, etc. */
+html {
+  font-family: Poppins;
+}
+
+.btn-green-primary {
+  color: #fff;
+  background-color: #1F953C !important;
+}
+
+.btn-green-transparent {
+  color: #fff;
+  background-color: #3FC35F !important;
+}
+
+.btn-yellow-primary {
+  color: #fff;
+  background-color: #FEC907 !important;
+}
+
+.btn-yellow-transparent {
+  color:#fff;
+  background-color: #FCD959 !important;
+}
+
+.green-primary {
+  color: #1F953C !important;
+}
+
+.green-transparent {
+  color: #3FC35F !important;
+}
+
+.yellow-primary {
+  color: #FEC907 !important;
+}
+
+.yellow-transparent {
+  color: #FCD959 !important;
+}
+
 body {
   background-color: #ffffff;
   /* font-family: "Poppins", serif; */
-  font-family: "Poppins";
   color: #333333;
   font-size: 15px;
   overflow-x: hidden;
+}
+
+.font-poppins {
+  font-family: Poppins !important;
 }
 
 .no-padding {
@@ -1945,7 +1988,8 @@ BAGIAN KEGIATAN
 ====================*/
 #mu-blog-banner {
   background-attachment: fixed;
-  background-image: url("assets/img/blog-banner.jpg");
+  /* background-image: url("assets/img/blog-banner.jpg"); */
+  background-image: url('assets/img/figma-export/artikel-banner.png');
   background-position: center center;
   background-size: cover;
   display: inline;
@@ -1955,7 +1999,7 @@ BAGIAN KEGIATAN
 }
 
 #mu-blog-banner:before {
-  background-color: rgba(59, 59, 59, 0.6);
+  background-image: url('assets/img/figma-export/artikel-banner.png');
   content: '';
   position: absolute;
   bottom: 0;

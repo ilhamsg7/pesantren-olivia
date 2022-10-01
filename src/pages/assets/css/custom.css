@@ -1,0 +1,18 @@
+#search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+}
+
+#ponpes-title {
+    margin-top: 1.5rem;
+    margin-left: 20px;
+}
+
+/* #artikel-banner {
+    background-image: url('../../assets/img/figma-export/artikel-banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2000px 750px;
+} */

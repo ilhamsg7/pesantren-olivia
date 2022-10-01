@@ -25,13 +25,14 @@
 
   <!-- Main style sheet -->
   <link href="style.css" rel="stylesheet">
+  
 
 
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
-
+  <link rel="stylesheet" href="assets/css/custom.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -71,7 +72,7 @@
           </button>
           <!-- LOGO -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
-          <a class="navbar-brand" href="index.html" style="color:black">SIPONTREN</a>
+          <a class="navbar-brand" id="ponpes-title" href="index.html" style="color:black">SIPONTREN</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
@@ -93,11 +94,11 @@
   <section id="mu-blog-banner">
     <div class="container">
       <div class="mu-blog-banner-area">
-        <h2>Artikel</h2>
         <ol class="breadcrumb">
           <li><a href="index.html">Beranda</a></li>
           <li class="active">Artikel</li>
         </ol>
+        <h2>Artikel</h2>
       </div>
     </div>
   </section>
@@ -197,6 +198,15 @@
               <!-- Start Blog Sidebar -->
               <div class="col-md-4 col-sm-4">
                 <aside class="mu-blog-sidebar">
+                  <!-- Search Bar -->
+                  <div class="mu-blog-sidebar-single col-md-12">
+                    <div class="input-group" id="search-bar">
+                      <input type="text" class="form-control" placeholder="Search this blog" style="width: 85%;">
+                      <button class="btn btn-green-primary" type="button">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
                   <!-- Blog Sidebar Single -->
                   <div class="mu-blog-sidebar-single">
                     <h3>Kategori</h3>
