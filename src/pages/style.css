@@ -73,6 +73,10 @@ body {
   font-family: Poppins !important;
 }
 
+.font-nunito {
+  font-family: Nunito !important;
+}
+
 .no-padding {
   padding: 0;
 }
@@ -1438,7 +1442,7 @@ BAGIAN KEGIATAN
   TESTIMONIAL SECTION
 ====================*/
 #mu-dawuh {
-  background-image: url("assets/img/testimonial-bg.jpg");
+  background-image: url("https://source.unsplash.com/1920x800?kyai");
   background-size: cover;
   background-attachment: fixed;
   display: inline;

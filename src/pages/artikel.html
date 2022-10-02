@@ -26,7 +26,7 @@
 
     <!-- Main style sheet -->
     <link href="style.css" rel="stylesheet">    
-	<link rel="stylesheet" href="assets/css/custom.css">
+	  <link rel="stylesheet" href="assets/css/custom.css">
 
    
     <!-- Google Fonts -->
@@ -116,8 +116,8 @@
               <div class="col-md-8 col-sm-8">
                 <div class="mu-blog-content">
                   <!-- Start Single blog item -->
-                  <article class="mu-news-single">
-                    <h3><a href="detail-artikel.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
+                  <article class="mu-news-single title-artikel">
+                    <h3><a href="detail-artikel.html">Hukum kapitalisme dalam prespektif islam</a></h3>
                     <figure class="mu-news-img">
                       <a href="detail-artikel.html"><img src="https://source.unsplash.com/1280x720?moeslim" alt="img"></a>                      
                     </figure>
@@ -134,8 +134,10 @@
                   </article>
                   <!-- End Single blog item -->
                   <!-- Start Single blog item -->
-                  <article class="mu-news-single">
-                    <h3><a href="detail-artikel.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
+                  <article class="mu-news-single title-artikel">
+                    <h3><a href="detail-artikel.html">Pemanfaatan malaikat sebagai sarana
+                      kapitalisme rahmatan-lil alamin
+                    </a></h3>
                     <figure class="mu-news-img">
                       <a href="detail-artikel.html"><img src="https://source.unsplash.com/1280x720?islam" alt="img"></a>                      
                     </figure>
@@ -152,8 +154,8 @@
                   </article>
                   <!-- End Single blog item -->
                   <!-- Start Single blog item -->
-                  <article class="mu-news-single">
-                    <h3><a href="detail-artikel.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
+                  <article class="mu-news-single title-artikel">
+                    <h3><a href="detail-artikel.html">Humor menurut sudut pandang islam</a></h3>
                     <figure class="mu-news-img">
                       <a href="detail-artikel.html"><img src="https://source.unsplash.com/1280x720?islamic" alt="img"></a>                      
                     </figure>
@@ -202,7 +204,7 @@
                   <!-- Search Bar -->
                   <div class="mu-blog-sidebar-single col-md-12">
                     <div class="input-group" id="search-bar">
-                      	<input type="text" class="form-control" placeholder="Search this blog" style="width: 85%;">
+                      	<input id="artikel-search" onkeyup="search_article()" type="text" class="form-control" name="search" placeholder="Cari artikel" style="width: 85%;">
                         <button class="btn btn-green-primary" type="button">
                           <i class="fa fa-search"></i>
                         </button>
@@ -383,6 +385,7 @@
 
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
+  <script src="assets/js/search-artikel.js"></script>
 
   </body>
 </html>
