@@ -10,9 +10,15 @@
     margin-left: 20px;
 }
 
-/* #artikel-banner {
-    background-image: url('../../assets/img/figma-export/artikel-banner.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 2000px 750px;
-} */
+.blog-title {
+    text-align: left !important;
+} 
+
+.btn-readmore {
+    display: flex !important;
+    justify-content: start !important;
+    border-color: #FEC907 !important;
+}
+.title-artikel {
+    border-radius: 15px !important;
+}
