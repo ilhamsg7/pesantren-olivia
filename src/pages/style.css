@@ -502,6 +502,10 @@ img {
   width: 100%;
 }
 
+#mu-sejarah-us .mu-sejarah-us-area .mu-sejarah-us-left h2{
+  color: #3FC35F;
+}
+
 #mu-sejarah-us .mu-sejarah-us-area .mu-sejarah-us-left p {
   line-height: 24px;
 }
@@ -603,13 +607,15 @@ img {
 }
 
 .mu-title h2 {
-  color: #000;
+  color: #FEC907;
+  /* color: #000; */
   font-size: 35px;
   margin-bottom: 5px;
 }
 
 .mu-title i {
   font-size: 18px;
+  color: #FEC907;
 }
 
 .mu-title .mu-title-bar {
@@ -617,6 +623,7 @@ img {
 }
 
 .mu-title .mu-title-bar::before {
+  /* color: #FEC907; */
   content: "";
   height: 2px;
   left: 6px;
@@ -626,6 +633,7 @@ img {
 }
 
 .mu-title .mu-title-bar::after {
+  /* color: #FEC907; */
   content: "";
   height: 2px;
   right: 26px;
@@ -647,7 +655,8 @@ img {
 }
 
 #mu-counter .mu-counter-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #3fc35f;
+  /* background-color: rgba(0, 0, 0, 0.8); */
   display: inline;
   padding: 100px 0;
   float: left;
@@ -845,7 +854,7 @@ BAGIAN KEGIATAN
 ==================*/
 
 #mu-aktivitas {
-  background-color: #222;
+  background-color: #3FC35F;
   display: inline;
   float: left;
   width: 100%;
@@ -856,6 +865,10 @@ BAGIAN KEGIATAN
   display: inline;
   float: left;
   width: 100%;
+}
+
+#mu-aktivitas .mu-aktivitas-area .mu-title h2{
+  color: #FEC907;
 }
 
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content {
@@ -915,7 +928,7 @@ BAGIAN KEGIATAN
 
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-us-left ul li:before {
   content: "\f24d";
-  color: #3fc35f;
+  color: #FEC907;
   font-family: fontAwesome;
   margin-right: 10px;
 }
@@ -977,7 +990,8 @@ BAGIAN KEGIATAN
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas .active a:hover,
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas .active a:focus {
   /* background-color: #FFF; */
-  background-color: #222;
+  /* background-color: #222; */
+  background-color: #3fc35f;
 }
 
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-tab-content-area {
@@ -1451,7 +1465,8 @@ BAGIAN KEGIATAN
 }
 
 #mu-dawuh .mu-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: #3FC35F;
   display: inline;
   float: left;
   padding: 70px 0 100px;
@@ -1873,10 +1888,14 @@ BAGIAN KEGIATAN
  CONTACT SECTION
 ====================*/
 #mu-hubungi {
-  background-color: #f8f8f8;
-  display: inline;
+  background-image: url("assets/img/figma-export/bg-footer.png");
+  /* background-color: #3FC35F ; */
+  /* display: inline; */
   float: left;
-  padding: 100px 0;
+  /* height: 100%; */
+  /* padding: 100px 0; */
+  /* height: 10000px; */
+  background-repeat: no-repeat;
   width: 100%;
 }
 
@@ -1901,8 +1920,12 @@ BAGIAN KEGIATAN
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left h3{
- color: #3FC35F;
+ color: #fff;
 }
+
+#mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left p{
+  color: #fff;
+ }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left .form-group {
   margin-bottom: 25px;
@@ -1916,7 +1939,7 @@ BAGIAN KEGIATAN
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left .mu-hubungi-form input[type="text"],
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left .mu-hubungi-form input[type="email"] {
-  color: #000;
+  color: #fff;
   border-radius: 0;
   height: 40px;
 }
@@ -1927,7 +1950,7 @@ BAGIAN KEGIATAN
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left .mu-hubungi-form textarea {
-  color: #000;
+  color: #fff;
   border-radius: 0;
   padding: 10px;
 }
@@ -1950,14 +1973,23 @@ BAGIAN KEGIATAN
   width: 100%;
 }
 
+#mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget a{
+  color: #fff;
+}
+
+#mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-widget p{
+  color: #fff;
+}
+
+
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-widget h3 {
   margin-top: 0px;
-  color: #3FC35F;
+  color: #fff;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget h3 {
   margin-top: 0px;
-  color: #3FC35F;
+  color: #fff;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget>p {
@@ -1973,7 +2005,7 @@ BAGIAN KEGIATAN
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget a:hover{
-  color: #3fc35f;
+  color: #FEC907;
   letter-spacing: 1px;
 }
 
@@ -2862,6 +2894,7 @@ BAGIAN KEGIATAN
 }
 
 @media (max-width: 640px) {
+  
   .navbar-default .navbar-toggle {
     border-color: #fff;
     border-radius: 0px;
@@ -2928,6 +2961,11 @@ BAGIAN KEGIATAN
 }
 
 @media (max-width: 480px) {
+
+  #mu-hubungi{
+      display: none;
+  }
+
   #mu-beranda .mu-beranda-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
     left: 5%;
     right: 5%;
@@ -3115,12 +3153,18 @@ BAGIAN KEGIATAN
   }
 
   #mu-hubungi {
-    padding: 100px 0 50px;
+    /* padding: 100px 0 50px; */
+    display: none;
+    /* display: none;
+    background-repeat: none;
+    background-color: #3FC35F; */
+    /* height: 100px; */
   }
 
   #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget a {
     /* margin-top: 20px; */
     /* color: #999999; */
+    text-align: left;
     transition: .3s;
   
   }

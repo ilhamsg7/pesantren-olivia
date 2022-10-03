@@ -67,10 +67,10 @@ Author URI : http://www.markups.io/
   color: #3fc35f;
 }
 .mu-title .mu-title-bar::before {
-  background-color: #3fc35f;
+  background-color: #FEC907;
 }
 .mu-title .mu-title-bar::after {
-  background-color: #3fc35f;
+  background-color: #FEC907;
 }
 
 #mu-artikel .mu-artikel-area .mu-artikel-content .mu-artikel {
@@ -96,36 +96,45 @@ Author URI : http://www.markups.io/
 }
 
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas {
-  border-bottom: 1px solid #3fc35f;
+  border-bottom: 1px solid #FEC907;
 }
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li a {
-  background-color: #3fc35f;
+  background-color: #FEC907;
 }
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li a:hover, #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas li a:focus {
-  border-color: #3fc35f #3fc35f transparent;
+  /* border-color: #3fc35f #3fc35f transparent;
+   */
+  border-color: #FEC907;
+
 }
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas .active a,
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas .active a:hover,
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas .active a:focus {
-  color: #3fc35f;
-  border-color: #3fc35f #3fc35f transparent;
+  /* color: #3fc35f; */
+  color: #fff;
+  border-color: #FEC907 #FEC907 transparent;
 }
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading a:hover, #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading a:focus {
-  color: #3fc35f;
+  /* color: #3fc35f; */
+  color: #fff;
+
 }
 #mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .mu-menu-price {
-  color: #3fc35f;
+  /* color: #3fc35f; */
+  color: #fff;
 }
 
 #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content h3 {
-  border-bottom: 2px solid #3fc35f;
+  /* border-bottom: 2px solid #3fc35f; */
+  border-bottom: 2px solid #FEC907;
 }
-#mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="text"]:focus,
+/* #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="text"]:focus,
 #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form input[type="email"]:focus {
   border-color: #3fc35f;
-}
+} */
 #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form select:focus {
   border-color: #3fc35f;
+  
 }
 #mu-kegiatan .mu-kegiatan-area .mu-kegiatan-content .mu-kegiatan-form textarea:focus {
   border-color: #3fc35f;
@@ -153,10 +162,10 @@ Author URI : http://www.markups.io/
   font-family: "Open Sans", sans-serif;
 }
 #mu-dawuh .mu-dawuh-area .mu-dawuh-content .mu-dawuh-slider .slick-dots li {
-  border: 2px solid #3fc35f;
+  border: 2px solid #FEC907;
 }
 #mu-dawuh .mu-dawuh-area .mu-dawuh-content .mu-dawuh-slider .slick-dots .slick-active {
-  background-color: #3fc35f;
+  background-color: #fec907;
 }
 
 #mu-subscription {
