@@ -532,7 +532,7 @@ img {
 
 
 #mu-visiMisi-us {
-  background-color: #222;
+  background-image: url('../pages/assets/img/figma-export/visi-misi-bg.png');
   color: #fff;
   display: inline;
   float: left;
@@ -1874,10 +1874,12 @@ BAGIAN KEGIATAN
 ====================*/
 #mu-hubungi {
   background-color: #f8f8f8;
+  /* background-image: url('assets/img/figma-export/Waves.png') !important; */
   display: inline;
   float: left;
   padding: 100px 0;
   width: 100%;
+  /* color: white; */
 }
 
 #mu-hubungi .mu-hubungi-area {

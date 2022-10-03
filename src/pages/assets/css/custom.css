@@ -86,3 +86,29 @@
     background-image: url('../img/figma-export/organize-header.png') !important;
     z-index:  99;
 }
+
+.bg-navbar {
+  color:#1F953C !important;
+  background-color:#1F953C !important;
+}
+
+.text-light {
+  color: white !important;
+}
+
+#footers{
+  background-image: url('../img/figma-export/Waves.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+#bottoms {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+}
+
+#pengurus {
+  border-radius: 50% !important;
+}
