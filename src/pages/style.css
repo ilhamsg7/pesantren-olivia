@@ -865,7 +865,7 @@ BAGIAN KEGIATAN
   width: 100%;
 }
 
-#mu-aktivitas .mu-aktivitas-area .mu-artikel-content .mu-artikel {
+#mu-aktivitas .mu-aktivitas-area .mu-aktivitas-content .mu-aktivitas {
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -1687,11 +1687,14 @@ BAGIAN KEGIATAN
 #mu-pengurus .mu-pengurus-area .mu-pengurus-content .mu-pengurus-nav .slick-list li .mu-single-pengurus .mu-single-pengurus-img {
   display: inline;
   float: left;
-  width: 100%;
+  /* width: 275px;
+  height: 265px; */
 }
 
 #mu-pengurus .mu-pengurus-area .mu-pengurus-content .mu-pengurus-nav .slick-list li .mu-single-pengurus .mu-single-pengurus-img img {
   width: 100%;
+  /* width: 275px;
+  height: 375px; */
 }
 
 #mu-pengurus .mu-pengurus-area .mu-pengurus-content .mu-pengurus-nav .slick-list li .mu-single-pengurus .mu-single-pengurus-info {
@@ -1893,8 +1896,12 @@ BAGIAN KEGIATAN
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left {
   display: inline;
   float: left;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins";
   width: 100%;
+}
+
+#mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left h3{
+ color: #3FC35F;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left .form-group {
@@ -1943,13 +1950,31 @@ BAGIAN KEGIATAN
   width: 100%;
 }
 
+#mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-widget h3 {
+  margin-top: 0px;
+  color: #3FC35F;
+}
+
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget h3 {
   margin-top: 0px;
+  color: #3FC35F;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget>p {
   letter-spacing: 0.5px;
   line-height: 26px;
+}
+
+#mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget a {
+  /* margin-top: 20px; */
+  /* color: #999999; */
+  transition: .3s;
+
+}
+
+#mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget a:hover{
+  color: #3fc35f;
+  letter-spacing: 1px;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget address {
@@ -2683,6 +2708,17 @@ BAGIAN KEGIATAN
   color: #fff;
 }
 
+.copyright{
+  padding: 10px;
+  background-color: #888;
+  color: #fff;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.copyright a{
+  color: #fff;
+}
 
 
 /*==================
@@ -3082,6 +3118,18 @@ BAGIAN KEGIATAN
     padding: 100px 0 50px;
   }
 
+  #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget a {
+    /* margin-top: 20px; */
+    /* color: #999999; */
+    transition: .3s;
+  
+  }
+  
+  #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget a:hover{
+    color: #3fc35f;
+    letter-spacing: 1px;
+  }
+
   #mu-galeri .mu-galeri-area .mu-galeri-content .mu-galeri-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info {
     padding-top: 22.5%;
   }
@@ -3205,7 +3253,7 @@ BAGIAN KEGIATAN
   /* background-color: #f8f8f8; */
 }
 
-.footer .footer-about,
+
 .footer .footer-link,
 .footer .footer-contact {
   position: relative;
@@ -3213,8 +3261,12 @@ BAGIAN KEGIATAN
   color: #999999;
 }
 
-.footer .footer-about h2,
-.footer .footer-contact h2 {
+.footer .footer-about p{
+  color: #999999;
+}
+
+.footer .footer-contact h2
+.footer .footer-about h2 {
   position: relative;
   margin-bottom: 30px;
   font-size: 25px;
