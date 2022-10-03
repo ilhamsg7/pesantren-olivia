@@ -22,3 +22,67 @@
 .title-artikel {
     border-radius: 15px !important;
 }
+
+/*==================
+ BLOG PAGE
+====================*/
+#mu-organize-banner {
+  background-attachment: fixed;
+  /* background-image: url("assets/img/blog-banner.jpg"); */
+  background-image: url('assets/img/figma-export/artikel-banner.png');
+  background-position: center center;
+  background-size: cover;
+  display: inline;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#mu-organize-banner:before {
+  background-image: url('../img/figma-export/organize-header.png') !important;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#mu-organize-banner .mu-organize-banner-area {
+  display: inline;
+  float: left;
+  min-height: 350px;
+  padding: 12% 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+}
+
+#mu-organize-banner .mu-organize-banner-area h2 {
+  color: #fff;
+}
+
+#mu-organize-banner .mu-organize-banner-area .breadcrumb {
+  background-color: transparent;
+  border-radius: 0;
+  margin-bottom: 0px;
+}
+
+#mu-organize-banner .mu-organize-banner-area .breadcrumb .active {
+  color: #3fc35f;
+}
+
+#mu-organize-banner .mu-organize-banner-area .breadcrumb li a {
+  color: #fff;
+}
+
+#mu-organize-banner .mu-organize-banner-area .breadcrumb li .active {
+  color: #fff;
+}
+
+.organize-banner {
+    background-image: url('../img/figma-export/organize-header.png') !important;
+    z-index:  99;
+}
