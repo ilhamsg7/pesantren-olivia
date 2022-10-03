@@ -186,7 +186,7 @@ img {
 }
 
 .mu-send-btn {
-  background-color: transparent;
+  background-color: #FEC907;
   border: 1px solid #ccc;
   display: inline-block;
   font-size: 16px;
@@ -200,6 +200,7 @@ img {
 
 .mu-send-btn:hover,
 .mu-send-btn:focus {
+  background-color: gold;
   color: #fff;
 }
 
@@ -536,7 +537,7 @@ img {
 
 
 #mu-visiMisi-us {
-  background-color: #222;
+  background-image: url('../pages/assets/img/figma-export/visi-misi-bg.png');
   color: #fff;
   display: inline;
   float: left;
@@ -1888,15 +1889,19 @@ BAGIAN KEGIATAN
  CONTACT SECTION
 ====================*/
 #mu-hubungi {
-  background-image: url("assets/img/figma-export/bg-footer.png");
-  /* background-color: #3FC35F ; */
-  /* display: inline; */
+  background-color: #f8f8f8;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  display: inline;
   float: left;
   /* height: 100%; */
   /* padding: 100px 0; */
   /* height: 10000px; */
   background-repeat: no-repeat;
   width: 100%;
+  /* color: white; */
 }
 
 #mu-hubungi .mu-hubungi-area {
@@ -1920,11 +1925,11 @@ BAGIAN KEGIATAN
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left h3{
- color: #fff;
+ color: #222;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left p{
-  color: #fff;
+  color: #555;
  }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-left .form-group {
@@ -1974,22 +1979,22 @@ BAGIAN KEGIATAN
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget a{
-  color: #fff;
+  color: #555;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-widget p{
-  color: #fff;
+  color: #555;
 }
 
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-widget h3 {
   margin-top: 0px;
-  color: #fff;
+  color: #222;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget h3 {
   margin-top: 0px;
-  color: #fff;
+  color: #222;
 }
 
 #mu-hubungi .mu-hubungi-area .mu-hubungi-content .mu-hubungi-right .mu-hubungi-widget>p {
